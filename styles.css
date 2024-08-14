@@ -6,9 +6,10 @@
 }
 
 .contenedor__principal{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: black;
+    color: white;
     font-family: 'Roboto';
 }
 header{
@@ -35,4 +36,56 @@ header{
    border-radius: 5px;
    font-weight: 700;
    font-size: 16px;
+}
+.contenedor__productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.contenedor__productos-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    width: 610px;
+    height: 130px;
+    border: solid 2px gray;
+}
+.contenedor__productos-div img{
+    width: 128px;
+    height: 100%;
+}
+.contenedor__informacion{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   margin-left: 20px;
+}
+.contenedor__informacion h3{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /*esto lo saque de stack overflow*/
+    -webkit-line-clamp: 2;  /* Muestra solo 2 líneas */
+    overflow: hidden;       /* Oculta el desbordamiento */
+    text-overflow: ellipsis; /* Añade "..." al final del texto truncado */
+    max-width: 300px;       /* Ajusta el ancho máximo según sea necesario */
+    
+}
+.contenedor__informacion p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0 10px 0;
+    
+}
+.contenedor__productos span{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #5791A4;
+    width: 50%;
+
 }
