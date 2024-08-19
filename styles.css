@@ -4,11 +4,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: black;
+}
 
 .contenedor__principal{
     height: 100%;
     width: 100vw;
-    background-color: black;
     color: white;
     font-family: 'Roboto';
 }
@@ -43,7 +45,7 @@ header{
     align-items: center;
     margin-top: 30px;
 }
-.contenedor__productos-div{
+.contenedor__productos-li{
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -51,7 +53,7 @@ header{
     height: 130px;
     border: solid 2px gray;
 }
-.contenedor__productos-div img{
+.contenedor__productos-li img{
     width: 128px;
     height: 100%;
 }
